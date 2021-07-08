@@ -18,9 +18,15 @@ $mobile:539px;
     text-align:$align; 
     margin-bottom:$mb; 
 }
+body{
+    width: 100%;
+    overflow-x: hidden; //가로스크롤 없애기
+}
 #header{
     width:100%; 
     border-bottom:1px solid #ddd; 
+    position: relative;
+    z-index: 2;
 
     .inner{
         width:1180px; 
@@ -54,10 +60,45 @@ $mobile:539px;
                     float:left; 
                     a{
                         display:block; 
-                        padding:20px 40px; 
-                        font:bold 15px/1 'arial'; 
+                        padding: 0px 40px; 
+                        height: 50px;
+                        font:bold 15px/50px 'arial'; 
                         color:#555; 
                         transition:all 0.5s;
+                    }
+                    .sub {
+                        width: 1180px;
+                        height: 300px;
+                        //border: 1px solid red;
+                        position: absolute;
+                        top:51px; right:0;
+                        display: none;
+                        background: #fff;
+
+                        &::before{
+                            content: "";
+                            display: block;
+                            //width: calc( (100vw - 1180px) / 2);
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: -100%;
+                            background: inherit;
+                        }
+                        &::after{
+                            content: "";
+                            display: block;
+                            //width: calc( (100vw - 1180px) / 2);
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            //right: calc( -(100vw - 1180px) / 2);
+                            right: -100%;
+                            background: inherit;
+                        }
+
                     }
                     &:hover a {
                         background:#555; color:#fff; 
@@ -202,6 +243,7 @@ $mobile:539px;
     background: lavender; 
     position:relative; 
     overflow:hidden;         
+    z-index: 1;
 }
 
 
