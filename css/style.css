@@ -490,19 +490,19 @@ body {
         content: '';
         display: block;
         clear: both; }
-      #header .inner .menuWeb #gnb li {
+      #header .inner .menuWeb #gnb > li {
         float: left; }
-        #header .inner .menuWeb #gnb li a {
+        #header .inner .menuWeb #gnb > li > a {
           display: block;
           padding: 0px 40px;
           height: 50px;
           font: bold 15px/50px 'arial';
           color: #555;
           transition: all 0.5s; }
-          #header .inner .menuWeb #gnb li a:hover a {
+          #header .inner .menuWeb #gnb > li > a:hover a {
             background: #555;
             color: #fff; }
-        #header .inner .menuWeb #gnb li .sub {
+        #header .inner .menuWeb #gnb > li .sub {
           width: 1180px;
           height: 300px;
           position: absolute;
@@ -510,7 +510,7 @@ body {
           right: 0;
           display: none;
           background: #fff; }
-          #header .inner .menuWeb #gnb li .sub::before {
+          #header .inner .menuWeb #gnb > li .sub::before {
             content: "";
             display: block;
             width: 100%;
@@ -519,7 +519,7 @@ body {
             top: 0;
             left: -100%;
             background: inherit; }
-          #header .inner .menuWeb #gnb li .sub::after {
+          #header .inner .menuWeb #gnb > li .sub::after {
             content: "";
             display: block;
             width: 100%;
