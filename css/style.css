@@ -510,6 +510,16 @@ body {
           right: 0;
           display: none;
           background: #fff; }
+          #header .inner .menuWeb #gnb > li .sub .left {
+            width: 30%;
+            height: 100%;
+            background: lightsteelblue;
+            float: left; }
+          #header .inner .menuWeb #gnb > li .sub .right {
+            width: 70%;
+            height: 100%;
+            background: beige;
+            float: right; }
           #header .inner .menuWeb #gnb > li .sub::before {
             content: "";
             display: block;
@@ -518,7 +528,7 @@ body {
             position: absolute;
             top: 0;
             left: -100%;
-            background: inherit; }
+            background: lightsteelblue; }
           #header .inner .menuWeb #gnb > li .sub::after {
             content: "";
             display: block;
@@ -527,7 +537,7 @@ body {
             position: absolute;
             top: 0;
             right: -100%;
-            background: inherit; }
+            background: beige; }
     #header .inner .menuWeb .util {
       position: absolute;
       top: 20px;
