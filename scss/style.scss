@@ -84,7 +84,7 @@ body{
                             position: absolute;
                             top: 0;
                             left: -100%;
-                            background: inherit;
+                            background: blue;
                         }
                         &::after{
                             content: "";
@@ -96,7 +96,7 @@ body{
                             top: 0;
                             //right: calc( -(100vw - 1180px) / 2);
                             right: -100%;
-                            background: inherit;
+                            background: Red;
                         }
 
                     }
