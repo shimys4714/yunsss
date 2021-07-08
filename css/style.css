@@ -499,6 +499,9 @@ body {
           font: bold 15px/50px 'arial';
           color: #555;
           transition: all 0.5s; }
+          #header .inner .menuWeb #gnb li a:hover a {
+            background: #555;
+            color: #fff; }
         #header .inner .menuWeb #gnb li .sub {
           width: 1180px;
           height: 300px;
@@ -515,7 +518,7 @@ body {
             position: absolute;
             top: 0;
             left: -100%;
-            background: blue; }
+            background: inherit; }
           #header .inner .menuWeb #gnb li .sub::after {
             content: "";
             display: block;
@@ -524,10 +527,7 @@ body {
             position: absolute;
             top: 0;
             right: -100%;
-            background: Red; }
-        #header .inner .menuWeb #gnb li:hover a {
-          background: #555;
-          color: #fff; }
+            background: inherit; }
     #header .inner .menuWeb .util {
       position: absolute;
       top: 20px;

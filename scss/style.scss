@@ -65,6 +65,10 @@ body{
                         font:bold 15px/50px 'arial'; 
                         color:#555; 
                         transition:all 0.5s;
+
+                        &:hover a {
+                            background:#555; color:#fff; 
+                        } 
                     }
                     .sub {
                         width: 1180px;
@@ -78,31 +82,25 @@ body{
                         &::before{
                             content: "";
                             display: block;
-                            //width: calc( (100vw - 1180px) / 2);
                             width: 100%;
                             height: 100%;
                             position: absolute;
                             top: 0;
                             left: -100%;
-                            background: blue;
+                            background: inherit;
                         }
                         &::after{
                             content: "";
                             display: block;
-                            //width: calc( (100vw - 1180px) / 2);
                             width: 100%;
                             height: 100%;
                             position: absolute;
                             top: 0;
-                            //right: calc( -(100vw - 1180px) / 2);
                             right: -100%;
-                            background: Red;
+                            background: inherit;
                         }
 
                     }
-                    &:hover a {
-                        background:#555; color:#fff; 
-                    } 
                 }
             }
 
