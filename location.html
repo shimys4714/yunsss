@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sub_page</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script defer src="js/custom.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=aedbd3e8943ed96b2e9d49acc272238d"></script>
+    <script defer src="js/map.js"></script>
 </head>
 <body>
     <header id="header_sub">
@@ -55,9 +58,20 @@
     <section class="content">
         <div class="sub_visual"></div>
         <div class="inner">
-            <h1>LOCATION<span>찾아오시는 길</span>  </h1>
+            <h1>LOCATION<span>찾아오시는 길</span></h1>
+            
+            <div id="map"></div>
 
-            <!-- 컨텐츠 들어가는 부분 -->
+            <ul class="traffic">
+                <li><a href="#">교통정보 보기</a></li>
+                <li class="on"><a href="#">교통정보 끄기</a></li>
+            </ul>
+
+            <ul class="branch">
+                <li data-index="0" class="on"><a href="#">본점</a></li>
+                <li data-index="1"><a href="#">지점1</a></li>
+                <li data-index="2"><a href="#">지점2</a></li>
+            </ul>
         </div>
     </section>
 

@@ -46,17 +46,54 @@ input, a, img, span, label, select {
         content: '';
         display: block;
         clear: both; }
-      #header_sub .inner .menuWeb #gnb li {
+      #header_sub .inner .menuWeb #gnb > li {
         float: left; }
-        #header_sub .inner .menuWeb #gnb li a {
+        #header_sub .inner .menuWeb #gnb > li > a {
           display: block;
-          padding: 20px 40px;
-          font: bold 15px/1 'arial';
+          padding: 0px 40px;
+          height: 50px;
+          font: bold 15px/50px 'arial';
           color: #555;
           transition: all 0.5s; }
-        #header_sub .inner .menuWeb #gnb li:hover a {
-          background: #555;
-          color: #fff; }
+          #header_sub .inner .menuWeb #gnb > li > a:hover a {
+            background: #555;
+            color: #fff; }
+        #header_sub .inner .menuWeb #gnb > li .sub {
+          width: 1180px;
+          height: 300px;
+          position: absolute;
+          top: 51px;
+          right: 0;
+          display: none;
+          background: #fff; }
+          #header_sub .inner .menuWeb #gnb > li .sub .left {
+            width: 30%;
+            height: 100%;
+            background: lightsteelblue;
+            float: left; }
+          #header_sub .inner .menuWeb #gnb > li .sub .right {
+            width: 70%;
+            height: 100%;
+            background: beige;
+            float: right; }
+          #header_sub .inner .menuWeb #gnb > li .sub::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            background: lightsteelblue; }
+          #header_sub .inner .menuWeb #gnb > li .sub::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -100%;
+            background: beige; }
     #header_sub .inner .menuWeb .util {
       position: absolute;
       top: 20px;
@@ -460,6 +497,11 @@ input, a, img, span, label, select {
     right: 20px;
     color: #fff;
     cursor: pointer; }
+
+#map {
+  width: 100%;
+  height: 400px;
+  background: #111; }
 
 body {
   width: 100%;
